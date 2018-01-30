@@ -1,5 +1,6 @@
 ﻿using ConfigApiSharp.ConfigurationApiService;
 using System;
+using System.Linq;
 using System.Net;
 using System.ServiceModel;
 using System.Text;
@@ -63,6 +64,10 @@ namespace ConfigApiSharp
                     Client = client,
                     Exception = null
                 };
+
+                var managementServer = client.GetItem("/");
+                Console.WriteLine($"Connected to {managementServer.DisplayName}. Properties:");
+                managementServer.Properties.ToList().ForEach(p => Console.WriteLine($"\t{p.DisplayName}: {p.Value}"));
                 return result;
             }
             catch (Exception ex)
