@@ -39,26 +39,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="UnauthorizedAccessFaultFault">
-        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="LicenseExceptionFaultFault">
         <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="NotSupportedExceptionFaultFault">
-        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ArgumentExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="NotSupportedExceptionFaultFault">
+        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnauthorizedAccessFaultFault">
+        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="GetItems">
@@ -69,26 +69,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="ServerExceptionFaultFault">
-        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="LicenseExceptionFaultFault">
         <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="NotSupportedExceptionFaultFault">
-        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ServerExceptionFaultFault">
+        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="NotSupportedExceptionFaultFault">
+        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="SetItem">
@@ -99,26 +99,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="ArgumentNullExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnauthorizedAccessFaultFault">
+        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="PathNotFoundExceptionFaultFault">
         <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="UnauthorizedAccessFaultFault">
-        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="HasChildItems">
@@ -129,26 +129,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="UnauthorizedAccessFaultFault">
-        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="ArgumentExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ServerExceptionFaultFault">
+        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      </wsdl:fault>
       <wsdl:fault name="PathNotFoundExceptionFaultFault">
         <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="ServerExceptionFaultFault">
-        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      <wsdl:fault name="UnauthorizedAccessFaultFault">
+        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="GetChildItems">
@@ -159,6 +159,18 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="UnauthorizedAccessFaultFault">
+        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="NotSupportedExceptionFaultFault">
+        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerExceptionFaultFault">
+        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      </wsdl:fault>
       <wsdl:fault name="ArgumentExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
@@ -167,18 +179,6 @@
       </wsdl:fault>
       <wsdl:fault name="ArgumentNullExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="NotSupportedExceptionFaultFault">
-        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="UnauthorizedAccessFaultFault">
-        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ServerExceptionFaultFault">
-        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="ConstructItem">
@@ -189,11 +189,14 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
@@ -201,14 +204,11 @@
       <wsdl:fault name="ArgumentExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      <wsdl:fault name="NotSupportedExceptionFaultFault">
+        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="LicenseExceptionFaultFault">
         <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="NotSupportedExceptionFaultFault">
-        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="ConstructChildItem">
@@ -219,26 +219,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ServerExceptionFaultFault">
-        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ArgumentNullExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ServerExceptionFaultFault">
+        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="ValidateItem">
@@ -249,14 +249,14 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="PathNotFoundExceptionFaultFault">
         <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
@@ -264,11 +264,11 @@
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="LicenseExceptionFaultFault">
         <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="DeleteItem">
@@ -279,20 +279,20 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ArgumentNullExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
@@ -309,26 +309,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ServerExceptionFaultFault">
-        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ArgumentNullExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
+      <wsdl:fault name="UnauthorizedAccessFaultFault">
+        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerExceptionFaultFault">
+        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="UnauthorizedAccessFaultFault">
-        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="GetMethodInfos">
@@ -339,14 +339,8 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="ServerExceptionFaultFault">
-        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      <wsdl:fault name="PathNotFoundExceptionFaultFault">
+        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="LicenseExceptionFaultFault">
         <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
@@ -354,11 +348,17 @@
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="PathNotFoundExceptionFaultFault">
-        <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerExceptionFaultFault">
+        <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="GetMethodInfo">
@@ -375,20 +375,20 @@
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="UnauthorizedAccessFaultFault">
-        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="ArgumentExceptionFaultFault">
         <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
       </wsdl:fault>
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
+      </wsdl:fault>
       <wsdl:fault name="PathNotFoundExceptionFaultFault">
         <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UnauthorizedAccessFaultFault">
+        <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="InvokeMethod">
@@ -399,8 +399,11 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="NotSupportedExceptionFaultFault">
         <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
@@ -408,14 +411,11 @@
       <wsdl:fault name="PathNotFoundExceptionFaultFault">
         <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
-      </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
@@ -429,26 +429,26 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="NotSupportedExceptionFaultFault">
-        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      <wsdl:fault name="ArgumentNullExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="ServerExceptionFaultFault">
         <soap:fault use="literal" name="ServerExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentExceptionFaultFault">
+        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="NotSupportedExceptionFaultFault">
+        <soap:fault use="literal" name="NotSupportedExceptionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="LicenseExceptionFaultFault">
+        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="PathNotFoundExceptionFaultFault">
         <soap:fault use="literal" name="PathNotFoundExceptionFaultFault" namespace="" />
       </wsdl:fault>
       <wsdl:fault name="UnauthorizedAccessFaultFault">
         <soap:fault use="literal" name="UnauthorizedAccessFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="ArgumentNullExceptionFaultFault">
-        <soap:fault use="literal" name="ArgumentNullExceptionFaultFault" namespace="" />
-      </wsdl:fault>
-      <wsdl:fault name="LicenseExceptionFaultFault">
-        <soap:fault use="literal" name="LicenseExceptionFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
