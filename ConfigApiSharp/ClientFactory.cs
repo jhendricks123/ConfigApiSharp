@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using ConfigApiSharp.ConfigurationApiService;
 using ConfigApiSharp.ServerCommandService;
+using VideoOS.Platform;
+using VideoOS.Platform.Login;
 
 namespace ConfigApiSharp
 {
@@ -26,7 +29,7 @@ namespace ConfigApiSharp
                 ? new Uri($"https://{host}/ManagementServer/ServerCommandService.svc")
                 : new Uri($"http://{host}:{port}/ManagementServer/ServerCommandService.svc");
 
-            var channelFactory = WcfHelpers.BuildChannelFactory<ServerCommandServiceClient>(uri, userType);
+            var channelFactory = WcfHelpers.BuildChannelFactory<IServerCommandService>(uri, userType);
 
             WcfHelpers.SetChannelCredentials(channelFactory, userType, username, password);
 
@@ -81,17 +84,12 @@ namespace ConfigApiSharp
             try
             {
                 var client = channelFactory.CreateChannel();
-                var ms = client.GetItem("/");
                 var result = new BuildClientResult<IConfigurationService>()
                 {
-                    Name = ms.DisplayName,
+                    Name = "ConfigurationService",
                     Client = client,
                     Exception = null
                 };
-
-                var managementServer = client.GetItem("/");
-                Console.WriteLine($"Connected to {managementServer.DisplayName}. Properties:");
-                managementServer.Properties.ToList().ForEach(p => Console.WriteLine($"\t{p.DisplayName}: {p.Value}"));
                 return result;
             }
             catch (Exception ex)
