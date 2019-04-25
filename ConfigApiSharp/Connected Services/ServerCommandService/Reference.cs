@@ -6285,6 +6285,144 @@ namespace ConfigApiSharp.ServerCommandService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ViewGroupInternal", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
+    [System.SerializableAttribute()]
+    public partial class ViewGroupInternal : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ConfigApiSharp.ServerCommandService.ViewGroupInternalData ViewGroupDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ConfigApiSharp.ServerCommandService.ViewGroupInfo ViewGroupInfoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ConfigApiSharp.ServerCommandService.ViewGroupInternalData ViewGroupData {
+            get {
+                return this.ViewGroupDataField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ViewGroupDataField, value) != true)) {
+                    this.ViewGroupDataField = value;
+                    this.RaisePropertyChanged("ViewGroupData");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ConfigApiSharp.ServerCommandService.ViewGroupInfo ViewGroupInfo {
+            get {
+                return this.ViewGroupInfoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ViewGroupInfoField, value) != true)) {
+                    this.ViewGroupInfoField = value;
+                    this.RaisePropertyChanged("ViewGroupInfo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ViewGroupInternalData", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
+    [System.SerializableAttribute()]
+    public partial class ViewGroupInternalData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int DataVersionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ViewGroupDataXmlField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int XmlVersionField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int DataVersion {
+            get {
+                return this.DataVersionField;
+            }
+            set {
+                if ((this.DataVersionField.Equals(value) != true)) {
+                    this.DataVersionField = value;
+                    this.RaisePropertyChanged("DataVersion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ViewGroupDataXml {
+            get {
+                return this.ViewGroupDataXmlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ViewGroupDataXmlField, value) != true)) {
+                    this.ViewGroupDataXmlField = value;
+                    this.RaisePropertyChanged("ViewGroupDataXml");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int XmlVersion {
+            get {
+                return this.XmlVersionField;
+            }
+            set {
+                if ((this.XmlVersionField.Equals(value) != true)) {
+                    this.XmlVersionField = value;
+                    this.RaisePropertyChanged("XmlVersion");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ViewGroupInfo", Namespace="http://videoos.net/2/XProtectCSServerCommand")]
     [System.SerializableAttribute()]
     public partial class ViewGroupInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -6416,21 +6554,126 @@ namespace ConfigApiSharp.ServerCommandService {
         Normal = 0,
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SetViewGroupDataResultType", Namespace="http://videoos.net/2/XProtectCSServerCommand")]
-    public enum SetViewGroupDataResultType : int {
+    [System.Runtime.Serialization.DataContractAttribute(Name="CustomSettingInternal", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
+    [System.SerializableAttribute()]
+    public partial class CustomSettingInternal : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        UnspecifiedError = 0,
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Success = 1,
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ConfigApiSharp.ServerCommandService.CustomSettingInternalData CustomSettingDataField;
         
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        ReadOnlyError = 2,
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ConfigApiSharp.ServerCommandService.CustomSettingInfo CustomSettingInfoField;
         
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        ModifiedError = 3,
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ConfigApiSharp.ServerCommandService.CustomSettingInternalData CustomSettingData {
+            get {
+                return this.CustomSettingDataField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomSettingDataField, value) != true)) {
+                    this.CustomSettingDataField = value;
+                    this.RaisePropertyChanged("CustomSettingData");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ConfigApiSharp.ServerCommandService.CustomSettingInfo CustomSettingInfo {
+            get {
+                return this.CustomSettingInfoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomSettingInfoField, value) != true)) {
+                    this.CustomSettingInfoField = value;
+                    this.RaisePropertyChanged("CustomSettingInfo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CustomSettingInternalData", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
+    [System.SerializableAttribute()]
+    public partial class CustomSettingInternalData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CustomSettingDataXmlField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int DataVersionField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CustomSettingDataXml {
+            get {
+                return this.CustomSettingDataXmlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomSettingDataXmlField, value) != true)) {
+                    this.CustomSettingDataXmlField = value;
+                    this.RaisePropertyChanged("CustomSettingDataXml");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int DataVersion {
+            get {
+                return this.DataVersionField;
+            }
+            set {
+                if ((this.DataVersionField.Equals(value) != true)) {
+                    this.DataVersionField = value;
+                    this.RaisePropertyChanged("DataVersion");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -6508,6 +6751,87 @@ namespace ConfigApiSharp.ServerCommandService {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ResultStatus", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
+    public enum ResultStatus : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Undefined = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Success = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Failed = 2,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        PartlySuccess = 3,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        MarkedDataNotFound = 4,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        FeatureNotLicensed = 5,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        RecorderNotFound = 6,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        ManagementServerUnavailable = 7,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Unauthorized = 8,
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SortOrderOption", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
+    public enum SortOrderOption : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Header = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Description = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        StartTime = 2,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        TagTime = 3,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        EndTime = 4,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        CreateTime = 5,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        RetentionExpireTime = 6,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        UserName = 7,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Size = 8,
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SetViewGroupDataResultType", Namespace="http://videoos.net/2/XProtectCSServerCommand")]
+    public enum SetViewGroupDataResultType : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        UnspecifiedError = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Success = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        ReadOnlyError = 2,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        ModifiedError = 3,
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
@@ -7516,38 +7840,6 @@ namespace ConfigApiSharp.ServerCommandService {
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ResultStatus", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
-    public enum ResultStatus : int {
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Undefined = 0,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Success = 1,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Failed = 2,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        PartlySuccess = 3,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        MarkedDataNotFound = 4,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        FeatureNotLicensed = 5,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        RecorderNotFound = 6,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        ManagementServerUnavailable = 7,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Unauthorized = 8,
-    }
-    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClientProfile", Namespace="http://videoos.net/2/XProtectCSServerCommand")]
@@ -7748,298 +8040,6 @@ namespace ConfigApiSharp.ServerCommandService {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ViewGroupInternal", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
-    [System.SerializableAttribute()]
-    public partial class ViewGroupInternal : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ConfigApiSharp.ServerCommandService.ViewGroupInternalData ViewGroupDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ConfigApiSharp.ServerCommandService.ViewGroupInfo ViewGroupInfoField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ConfigApiSharp.ServerCommandService.ViewGroupInternalData ViewGroupData {
-            get {
-                return this.ViewGroupDataField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ViewGroupDataField, value) != true)) {
-                    this.ViewGroupDataField = value;
-                    this.RaisePropertyChanged("ViewGroupData");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ConfigApiSharp.ServerCommandService.ViewGroupInfo ViewGroupInfo {
-            get {
-                return this.ViewGroupInfoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ViewGroupInfoField, value) != true)) {
-                    this.ViewGroupInfoField = value;
-                    this.RaisePropertyChanged("ViewGroupInfo");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ViewGroupInternalData", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
-    [System.SerializableAttribute()]
-    public partial class ViewGroupInternalData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DataVersionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ViewGroupDataXmlField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int XmlVersionField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DataVersion {
-            get {
-                return this.DataVersionField;
-            }
-            set {
-                if ((this.DataVersionField.Equals(value) != true)) {
-                    this.DataVersionField = value;
-                    this.RaisePropertyChanged("DataVersion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ViewGroupDataXml {
-            get {
-                return this.ViewGroupDataXmlField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ViewGroupDataXmlField, value) != true)) {
-                    this.ViewGroupDataXmlField = value;
-                    this.RaisePropertyChanged("ViewGroupDataXml");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int XmlVersion {
-            get {
-                return this.XmlVersionField;
-            }
-            set {
-                if ((this.XmlVersionField.Equals(value) != true)) {
-                    this.XmlVersionField = value;
-                    this.RaisePropertyChanged("XmlVersion");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CustomSettingInternal", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
-    [System.SerializableAttribute()]
-    public partial class CustomSettingInternal : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ConfigApiSharp.ServerCommandService.CustomSettingInternalData CustomSettingDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ConfigApiSharp.ServerCommandService.CustomSettingInfo CustomSettingInfoField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ConfigApiSharp.ServerCommandService.CustomSettingInternalData CustomSettingData {
-            get {
-                return this.CustomSettingDataField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomSettingDataField, value) != true)) {
-                    this.CustomSettingDataField = value;
-                    this.RaisePropertyChanged("CustomSettingData");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ConfigApiSharp.ServerCommandService.CustomSettingInfo CustomSettingInfo {
-            get {
-                return this.CustomSettingInfoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomSettingInfoField, value) != true)) {
-                    this.CustomSettingInfoField = value;
-                    this.RaisePropertyChanged("CustomSettingInfo");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CustomSettingInternalData", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
-    [System.SerializableAttribute()]
-    public partial class CustomSettingInternalData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CustomSettingDataXmlField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DataVersionField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CustomSettingDataXml {
-            get {
-                return this.CustomSettingDataXmlField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomSettingDataXmlField, value) != true)) {
-                    this.CustomSettingDataXmlField = value;
-                    this.RaisePropertyChanged("CustomSettingDataXml");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DataVersion {
-            get {
-                return this.DataVersionField;
-            }
-            set {
-                if ((this.DataVersionField.Equals(value) != true)) {
-                    this.DataVersionField = value;
-                    this.RaisePropertyChanged("DataVersion");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SortOrderOption", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.Common.Proxy.Server")]
-    public enum SortOrderOption : int {
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Header = 0,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Description = 1,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        StartTime = 2,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        TagTime = 3,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        EndTime = 4,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        CreateTime = 5,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        RetentionExpireTime = 6,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        UserName = 7,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Size = 8,
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]

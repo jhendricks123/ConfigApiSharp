@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFaultException" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFaultException" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArgumentExceptionFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArgumentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArgumentExceptionFault" nillable="true" type="tns:ArgumentExceptionFault" />
+  <xs:complexType name="ArgumentNullExceptionFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArgumentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArgumentNullExceptionFault" nillable="true" type="tns:ArgumentNullExceptionFault" />
+  <xs:complexType name="LicenseExceptionFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LicenseExceptionFault" nillable="true" type="tns:LicenseExceptionFault" />
+  <xs:complexType name="NotSupportedExceptionFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotSupportedExceptionFault" nillable="true" type="tns:NotSupportedExceptionFault" />
+  <xs:complexType name="PathNotFoundExceptionFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PathNotFoundExceptionFault" nillable="true" type="tns:PathNotFoundExceptionFault" />
+  <xs:complexType name="UnauthorizedAccessFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnauthorizedAccessFault" nillable="true" type="tns:UnauthorizedAccessFault" />
+  <xs:complexType name="ServerExceptionFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServerExceptionFault" nillable="true" type="tns:ServerExceptionFault" />
+</xs:schema>

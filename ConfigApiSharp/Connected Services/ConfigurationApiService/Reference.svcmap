@@ -19,17 +19,17 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://xprotect/ManagementServer/ConfigurationApiService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ConfigurationApiService.wsdl" MetadataType="Wsdl" ID="bc6b331b-2c87-4d6c-8bb0-428ee2fcfdab" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="ConfigurationApiService.xsd" MetadataType="Schema" ID="e1539f6e-ca14-4d0d-85b8-8fc5bc6c9dd8" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?xsd=xsd3" />
-    <MetadataFile FileName="ConfigurationApiService1.xsd" MetadataType="Schema" ID="b70d69be-273a-4309-b199-31b3b576350b" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?xsd=xsd2" />
-    <MetadataFile FileName="ConfigurationApiService2.xsd" MetadataType="Schema" ID="ea82e6f6-e17a-431f-98eb-a4475d251616" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ConfigurationApiService3.xsd" MetadataType="Schema" ID="0fce1ae0-4ea0-4d6b-b936-fff9e6443891" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ConfigurationApiService1.wsdl" MetadataType="Wsdl" ID="c7cd069d-6344-47e7-9b22-45f76fa0a6d3" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?wsdl" />
-    <MetadataFile FileName="ConfigurationApiService4.xsd" MetadataType="Schema" ID="5fe09db1-cebe-4bf0-8f6d-3eaa470b103c" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?xsd=xsd4" />
-    <MetadataFile FileName="ConfigurationApiService2.wsdl" MetadataType="Wsdl" ID="2b3349e9-fa19-436a-8d25-9223c48e0273" SourceId="1" SourceUrl="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="ConfigurationApiService5.xsd" MetadataType="Schema" ID="dd5f0a7f-3568-4af0-b3d3-ef23d419cf94" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ConfigurationApiService51.xsd" MetadataType="Schema" ID="e0e75aa1-d48b-4a73-a124-87ce35b14c4e" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ConfigurationApiService52.xsd" MetadataType="Schema" ID="a82bee96-0b4f-4f17-a5a8-4c5d8c57da3a" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ConfigurationApiService53.xsd" MetadataType="Schema" ID="d0c162ef-55dc-4f2f-ae12-ec4aef848f8b" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ConfigurationApiService3.wsdl" MetadataType="Wsdl" ID="a967a148-5f24-4a18-818c-4ed434eacc7b" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="ConfigurationApiService31.wsdl" MetadataType="Wsdl" ID="a313fa5e-7596-494a-813a-92bfa7cd8f82" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?wsdl" />
+    <MetadataFile FileName="ConfigurationApiService32.wsdl" MetadataType="Wsdl" ID="1afebadb-67a3-4ea6-8476-a5c370b1cd77" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ConfigurationApiService54.xsd" MetadataType="Schema" ID="e52975c4-13aa-40a1-890c-558b2cae04c0" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ConfigurationApiService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

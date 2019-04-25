@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="IikMVDKEFcO6A7FPSSJm3c7ItD8=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="E2tEdSpbNKfMd2b18zW+SPv3PxQ=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IConfigurationService">
       <properties>
@@ -236,10 +236,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IConfigurationService" contract="ConfigurationApiService.IConfigurationService" bindingType="basicHttpBinding" address="https://usvm-xpco-01.support.us.local/ManagementServer/ConfigurationApiService.svc" bindingConfiguration="BasicHttpBinding_IConfigurationService">
+    <endpoint name="BasicHttpBinding_IConfigurationService" contract="ConfigurationApiService.IConfigurationService" bindingType="basicHttpBinding" address="https://usvm-jh-mgt2.condon.local/ManagementServer/ConfigurationApiService.svc" bindingConfiguration="BasicHttpBinding_IConfigurationService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>https://usvm-xpco-01.support.us.local/ManagementServer/ConfigurationApiService.svc</serializedValue>
+          <serializedValue>https://usvm-jh-mgt2.condon.local/ManagementServer/ConfigurationApiService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -321,10 +321,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="WSHttpBinding_IConfigurationService" contract="ConfigurationApiService.IConfigurationService" bindingType="wsHttpBinding" address="http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc" bindingConfiguration="WSHttpBinding_IConfigurationService">
+    <endpoint name="WSHttpBinding_IConfigurationService" contract="ConfigurationApiService.IConfigurationService" bindingType="wsHttpBinding" address="http://xprotect/ManagementServer/ConfigurationApiService.svc" bindingConfiguration="WSHttpBinding_IConfigurationService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://usvm-xpco-01/ManagementServer/ConfigurationApiService.svc</serializedValue>
+          <serializedValue>http://xprotect/ManagementServer/ConfigurationApiService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -351,7 +351,7 @@
           <serializedValue>System.ServiceModel.Configuration.UserPrincipalNameElement</serializedValue>
         </property>
         <property path="/identity/userPrincipalName/value" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>JH@Support.us.local</serializedValue>
+          <serializedValue>svcMilestone@condon.local</serializedValue>
         </property>
         <property path="/identity/servicePrincipalName" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.ServicePrincipalNameElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.ServicePrincipalNameElement</serializedValue>
@@ -436,7 +436,7 @@
           <serializedValue>System.ServiceModel.Configuration.UserPrincipalNameElement</serializedValue>
         </property>
         <property path="/identity/userPrincipalName/value" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>JH@Support.us.local</serializedValue>
+          <serializedValue>svcMilestone@condon.local</serializedValue>
         </property>
         <property path="/identity/servicePrincipalName" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.ServicePrincipalNameElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.ServicePrincipalNameElement</serializedValue>

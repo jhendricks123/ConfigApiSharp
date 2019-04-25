@@ -19,18 +19,18 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://corporatems2/ManagementServer/ServerCommandService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://xprotect/ManagementServer/ServerCommandService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServerCommandService.wsdl" MetadataType="Wsdl" ID="614f65af-32cd-412b-80c8-d664458ebc23" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?wsdl" />
-    <MetadataFile FileName="ServerCommandService.disco" MetadataType="Disco" ID="66a7e00b-3f02-45bd-add0-c8753949baca" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?disco" />
-    <MetadataFile FileName="ServerCommandService.xsd" MetadataType="Schema" ID="09eea139-5a9b-41d8-a3bf-92533b110d4e" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?xsd=xsd4" />
-    <MetadataFile FileName="ServerCommandService1.wsdl" MetadataType="Wsdl" ID="8007916f-9a0e-4914-b8e4-0798607019f7" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="ServerCommandService1.xsd" MetadataType="Schema" ID="f70dd2b0-695c-4965-9b5c-fcfd0552cd65" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServerCommandService2.xsd" MetadataType="Schema" ID="037b2969-b53b-4141-a05f-682a1ed25ddc" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServerCommandService3.xsd" MetadataType="Schema" ID="ef3d5b3e-3ede-487d-8e88-7b636cca574a" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?xsd=xsd3" />
-    <MetadataFile FileName="ServerCommandService4.xsd" MetadataType="Schema" ID="f5e78a14-675a-40d0-9850-a47f35db12e4" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServerCommandService2.wsdl" MetadataType="Wsdl" ID="63853539-cdde-43d5-8bd4-5dce5d916462" SourceId="1" SourceUrl="http://corporatems2/ManagementServer/ServerCommandService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="ServerCommandService3.wsdl" MetadataType="Wsdl" ID="8329c221-4a00-4660-aa07-3feb14a6e13a" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="ServerCommandService31.wsdl" MetadataType="Wsdl" ID="96d38437-bfd5-455b-9c1d-f817e85aaa69" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?wsdl" />
+    <MetadataFile FileName="ServerCommandService1.disco" MetadataType="Disco" ID="3669fe5e-1b98-4705-a37d-deadad4f4bb3" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?disco" />
+    <MetadataFile FileName="ServerCommandService32.wsdl" MetadataType="Wsdl" ID="f3466312-bad3-4c86-8f21-db7f3cc08925" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ServerCommandService5.xsd" MetadataType="Schema" ID="af404ec1-4a27-46e9-b6fc-4099da23a239" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ServerCommandService51.xsd" MetadataType="Schema" ID="750ff4b0-179e-4d94-8ca2-81c916d7af1d" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServerCommandService52.xsd" MetadataType="Schema" ID="d1ef4922-d2d2-451c-8bbf-d2430c4c6ce8" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServerCommandService53.xsd" MetadataType="Schema" ID="fd59bebc-0ed3-483c-95b2-9b5b600b6900" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServerCommandService54.xsd" MetadataType="Schema" ID="2a25f08f-59d2-450d-8065-374325b3eb7b" SourceId="1" SourceUrl="http://xprotect/ManagementServer/ServerCommandService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

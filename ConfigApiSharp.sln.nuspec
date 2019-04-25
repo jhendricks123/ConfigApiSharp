@@ -2,16 +2,16 @@
 <package >
   <metadata>
     <id>ConfigApiSharp</id>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <authors>Josh Hendricks</authors>
     <owners>Josh Hendricks</owners>
     <licenseUrl>https://github.com/jhendricks123/ConfigApiSharp/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/jhendricks123/ConfigApiSharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A simple Milestone Advanced VMS Configuration API client builder. Contains a simple to use static class to help build the WCF client proxy used to communicate with the Milestone XProtect Management Server Configuration API.</description>
+    <description>A simple Milestone Advanced VMS Configuration API client builder. Contains a simple to use static class to help build the WCF client proxy used to communicate with the Milestone XProtect Management Server ConfigurationApiService, as well as the ServerCommandService.</description>
     <releaseNotes>Published to GitHub and provided project and license URLs.</releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags>Milestone SDK MIP MIPSDK XProtect ConfigurationAPI ConfigAPI</tags>
+    <tags>Milestone SDK MIP MIPSDK XProtect ConfigurationAPI ConfigAPI ServerCommandService</tags>
     <dependencies>
     </dependencies>
   </metadata>

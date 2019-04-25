@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="i1jjsU8BIpGIM/ePW7XAZd6YATc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="BHp3LI9vU2lWTr1ZyrnAyu5E830=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServerCommandService">
       <properties>
@@ -236,10 +236,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServerCommandService" contract="ServerCommandService.IServerCommandService" bindingType="basicHttpBinding" address="https://corporatems2.condon.local/ManagementServer/ServerCommandService.svc" bindingConfiguration="BasicHttpBinding_IServerCommandService">
+    <endpoint name="BasicHttpBinding_IServerCommandService" contract="ServerCommandService.IServerCommandService" bindingType="basicHttpBinding" address="https://usvm-jh-mgt2.condon.local/ManagementServer/ServerCommandService.svc" bindingConfiguration="BasicHttpBinding_IServerCommandService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>https://corporatems2.condon.local/ManagementServer/ServerCommandService.svc</serializedValue>
+          <serializedValue>https://usvm-jh-mgt2.condon.local/ManagementServer/ServerCommandService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -321,10 +321,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="WSHttpBinding_IServerCommandService" contract="ServerCommandService.IServerCommandService" bindingType="wsHttpBinding" address="http://corporatems2/ManagementServer/ServerCommandService.svc" bindingConfiguration="WSHttpBinding_IServerCommandService">
+    <endpoint name="WSHttpBinding_IServerCommandService" contract="ServerCommandService.IServerCommandService" bindingType="wsHttpBinding" address="http://xprotect/ManagementServer/ServerCommandService.svc" bindingConfiguration="WSHttpBinding_IServerCommandService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://corporatems2/ManagementServer/ServerCommandService.svc</serializedValue>
+          <serializedValue>http://xprotect/ManagementServer/ServerCommandService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

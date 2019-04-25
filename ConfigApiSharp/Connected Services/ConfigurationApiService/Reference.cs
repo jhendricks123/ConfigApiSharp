@@ -659,68 +659,6 @@ namespace ConfigApiSharp.ConfigurationApiService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-        "ltException")]
-    [System.SerializableAttribute()]
-    public partial class LicenseExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TranslationIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Message {
-            get {
-                return this.MessageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string TranslationId {
-            get {
-                return this.TranslationIdField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TranslationIdField, value) != true)) {
-                    this.TranslationIdField = value;
-                    this.RaisePropertyChanged("TranslationId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
         "ltException")]
     [System.SerializableAttribute()]
@@ -799,10 +737,88 @@ namespace ConfigApiSharp.ConfigurationApiService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
         "ltException")]
     [System.SerializableAttribute()]
-    public partial class ServerExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class ArgumentNullExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ArgumentNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TranslationIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ArgumentName {
+            get {
+                return this.ArgumentNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ArgumentNameField, value) != true)) {
+                    this.ArgumentNameField = value;
+                    this.RaisePropertyChanged("ArgumentName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TranslationId {
+            get {
+                return this.TranslationIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TranslationIdField, value) != true)) {
+                    this.TranslationIdField = value;
+                    this.RaisePropertyChanged("TranslationId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        "ltException")]
+    [System.SerializableAttribute()]
+    public partial class LicenseExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -812,9 +828,6 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TranslationIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -852,19 +865,6 @@ namespace ConfigApiSharp.ConfigurationApiService {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -881,6 +881,68 @@ namespace ConfigApiSharp.ConfigurationApiService {
         "ltException")]
     [System.SerializableAttribute()]
     public partial class NotSupportedExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TranslationIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TranslationId {
+            get {
+                return this.TranslationIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TranslationIdField, value) != true)) {
+                    this.TranslationIdField = value;
+                    this.RaisePropertyChanged("TranslationId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        "ltException")]
+    [System.SerializableAttribute()]
+    public partial class PathNotFoundExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1001,88 +1063,10 @@ namespace ConfigApiSharp.ConfigurationApiService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
         "ltException")]
     [System.SerializableAttribute()]
-    public partial class ArgumentNullExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ArgumentNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TranslationIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ArgumentName {
-            get {
-                return this.ArgumentNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ArgumentNameField, value) != true)) {
-                    this.ArgumentNameField = value;
-                    this.RaisePropertyChanged("ArgumentName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Message {
-            get {
-                return this.MessageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string TranslationId {
-            get {
-                return this.TranslationIdField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TranslationIdField, value) != true)) {
-                    this.TranslationIdField = value;
-                    this.RaisePropertyChanged("TranslationId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-        "ltException")]
-    [System.SerializableAttribute()]
-    public partial class PathNotFoundExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class ServerExceptionFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1092,6 +1076,9 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TranslationIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1125,6 +1112,19 @@ namespace ConfigApiSharp.ConfigurationApiService {
                 if ((object.ReferenceEquals(this.TranslationIdField, value) != true)) {
                     this.TranslationIdField = value;
                     this.RaisePropertyChanged("TranslationId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Type {
+            get {
+                return this.TypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
+                    this.TypeField = value;
+                    this.RaisePropertyChanged("Type");
                 }
             }
         }
@@ -1391,26 +1391,26 @@ namespace ConfigApiSharp.ConfigurationApiService {
     public interface IConfigurationService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItem", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemLicenseExcep" +
-            "tionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemArgumentExce" +
             "ptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemServerExcept" +
-            "ionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemNotSupported" +
-            "ExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemUnauthorized" +
-            "AccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemArgumentNull" +
             "ExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemLicenseExcep" +
+            "tionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemNotSupported" +
+            "ExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemPathNotFound" +
             "ExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemUnauthorized" +
+            "AccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemServerExcept" +
+            "ionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ConfigurationItem GetItem(string path);
         
@@ -1418,26 +1418,26 @@ namespace ConfigApiSharp.ConfigurationApiService {
         System.Threading.Tasks.Task<ConfigApiSharp.ConfigurationApiService.ConfigurationItem> GetItemAsync(string path);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItems", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsPathNotFoun" +
-            "dExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsLicenseExce" +
-            "ptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsArgumentExc" +
+            "eptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsArgumentNul" +
             "lExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsServerExcep" +
-            "tionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsUnauthorize" +
-            "dAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsLicenseExce" +
+            "ptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsNotSupporte" +
             "dExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsArgumentExc" +
-            "eptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsPathNotFoun" +
+            "dExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsUnauthorize" +
+            "dAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetItemsServerExcep" +
+            "tionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ConfigurationItem[] GetItems(string itemType);
         
@@ -1445,8 +1445,8 @@ namespace ConfigApiSharp.ConfigurationApiService {
         System.Threading.Tasks.Task<ConfigApiSharp.ConfigurationApiService.ConfigurationItem[]> GetItemsAsync(string itemType);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItem", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemServerExcept" +
-            "ionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemArgumentExce" +
+            "ptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemArgumentNull" +
             "ExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1454,17 +1454,17 @@ namespace ConfigApiSharp.ConfigurationApiService {
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemLicenseExcep" +
             "tionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemUnauthorized" +
-            "AccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemArgumentExce" +
-            "ptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemNotSupported" +
             "ExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemPathNotFound" +
             "ExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemUnauthorized" +
+            "AccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/SetItemServerExcept" +
+            "ionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ValidateResult SetItem(ConfigApiSharp.ConfigurationApiService.ConfigurationItem item);
         
@@ -1476,23 +1476,23 @@ namespace ConfigApiSharp.ConfigurationApiService {
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsArgume" +
             "ntExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsServer" +
-            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsNotSup" +
-            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsArgume" +
+            "ntNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsLicens" +
             "eExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsArgume" +
-            "ntNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsNotSup" +
+            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsPathNo" +
             "tFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsUnauth" +
             "orizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/HasChildItemsServer" +
+            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         bool HasChildItems(string path);
         
@@ -1502,26 +1502,26 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItems", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsRespon" +
             "se")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsUnauth" +
-            "orizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsArgume" +
+            "ntExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsNotSup" +
-            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsServer" +
-            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsArgume" +
+            "ntNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsLicens" +
             "eExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsArgume" +
-            "ntExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsNotSup" +
+            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsPathNo" +
             "tFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsArgume" +
-            "ntNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsUnauth" +
+            "orizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetChildItemsServer" +
+            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ConfigurationItem[] GetChildItems(string path);
         
@@ -1531,11 +1531,17 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItem", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemRespon" +
             "se")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemArgume" +
+            "ntExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemArgume" +
             "ntNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemServer" +
-            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemLicens" +
+            "eExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemNotSup" +
+            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemPathNo" +
             "tFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1543,14 +1549,8 @@ namespace ConfigApiSharp.ConfigurationApiService {
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemUnauth" +
             "orizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemArgume" +
-            "ntExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemNotSup" +
-            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemLicens" +
-            "eExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructItemServer" +
+            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ConfigurationItem ConstructItem(string itemType, ConfigApiSharp.ConfigurationApiService.Property[] properties);
         
@@ -1560,17 +1560,17 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItem", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemR" +
             "esponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemL" +
-            "icenseExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemA" +
+            "rgumentExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemA" +
             "rgumentNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemL" +
+            "icenseExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemN" +
             "otSupportedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemA" +
-            "rgumentExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ConstructChildItemP" +
             "athNotFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1589,8 +1589,14 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItem", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemRespons" +
             "e")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemArgumen" +
+            "tExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemArgumen" +
             "tNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemLicense" +
+            "ExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemNotSupp" +
             "ortedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1603,12 +1609,6 @@ namespace ConfigApiSharp.ConfigurationApiService {
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemServerE" +
             "xceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemLicense" +
-            "ExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/ValidateItemArgumen" +
-            "tExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ValidateResult ValidateItem(ConfigApiSharp.ConfigurationApiService.ConfigurationItem item);
         
@@ -1623,11 +1623,11 @@ namespace ConfigApiSharp.ConfigurationApiService {
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/DeleteItemArgumentN" +
             "ullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/DeleteItemNotSuppor" +
-            "tedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/DeleteItemLicenseEx" +
             "ceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/DeleteItemNotSuppor" +
+            "tedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/DeleteItemPathNotFo" +
             "undExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1645,26 +1645,26 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItems", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsRe" +
             "sponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsPa" +
-            "thNotFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsAr" +
+            "gumentExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsAr" +
             "gumentNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsLi" +
+            "censeExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsNo" +
+            "tSupportedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsPa" +
+            "thNotFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsUn" +
             "authorizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsSe" +
             "rverExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsNo" +
-            "tSupportedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsLi" +
-            "censeExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetDependantItemsAr" +
-            "gumentExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.ConfigurationItem[] GetDependantItems(string path);
         
@@ -1674,8 +1674,11 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfos", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosRespo" +
             "nse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosPathN" +
-            "otFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosArgum" +
+            "entExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosArgum" +
+            "entNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosLicen" +
             "seExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1683,17 +1686,14 @@ namespace ConfigApiSharp.ConfigurationApiService {
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosNotSu" +
             "pportedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosArgum" +
-            "entExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosPathN" +
+            "otFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosUnaut" +
             "horizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosServe" +
             "rExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfosArgum" +
-            "entNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.MethodInfo[] GetMethodInfos();
         
@@ -1703,26 +1703,26 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfo", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoRespon" +
             "se")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoLicens" +
-            "eExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoServer" +
-            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoArgume" +
             "ntExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoNotSup" +
-            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoArgume" +
             "ntNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoLicens" +
+            "eExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoNotSup" +
+            "portedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoPathNo" +
             "tFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoUnauth" +
             "orizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetMethodInfoServer" +
+            "ExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         ConfigApiSharp.ConfigurationApiService.MethodInfo GetMethodInfo(string methodId);
         
@@ -1732,11 +1732,14 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethod", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodRespons" +
             "e")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodLicense" +
-            "ExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodArgumen" +
+            "tExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodArgumen" +
             "tNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodLicense" +
+            "ExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodNotSupp" +
             "ortedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1746,9 +1749,6 @@ namespace ConfigApiSharp.ConfigurationApiService {
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodUnautho" +
             "rizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodArgumen" +
-            "tExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/InvokeMethodServerE" +
             "xceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
@@ -1761,26 +1761,26 @@ namespace ConfigApiSharp.ConfigurationApiService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslations", ReplyAction="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsResp" +
             "onse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsArgu" +
-            "mentNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsServ" +
-            "erExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
-            "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsArgu" +
             "mentExceptionFaultFault", Name="ArgumentExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
-        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsNotS" +
-            "upportedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ArgumentNullExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsArgu" +
+            "mentNullExceptionFaultFault", Name="ArgumentNullExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.LicenseExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsLice" +
             "nseExceptionFaultFault", Name="LicenseExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.NotSupportedExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsNotS" +
+            "upportedExceptionFaultFault", Name="NotSupportedExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.PathNotFoundExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsPath" +
             "NotFoundExceptionFaultFault", Name="PathNotFoundExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.UnauthorizedAccessFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsUnau" +
             "thorizedAccessFaultFault", Name="UnauthorizedAccessFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
+            "ltException")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ConfigApiSharp.ConfigurationApiService.ServerExceptionFault), Action="http://VideoOS.Net/ConfigurationService/IConfigurationService/GetTranslationsServ" +
+            "erExceptionFaultFault", Name="ServerExceptionFault", Namespace="http://schemas.datacontract.org/2004/07/VideoOS.ConfigurationAPI.ConfigurationFau" +
             "ltException")]
         System.Collections.Generic.Dictionary<string, string> GetTranslations(string languageId);
         

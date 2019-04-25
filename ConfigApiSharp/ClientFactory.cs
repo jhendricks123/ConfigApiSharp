@@ -25,12 +25,10 @@ namespace ConfigApiSharp
                 ? new Uri($"https://{host}/ManagementServer/ServerCommandService.svc")
                 : new Uri($"http://{host}:{port}/ManagementServer/ServerCommandService.svc");
 
-            var channelFactory = WcfHelpers.BuildChannelFactory<IServerCommandService>(uri, userType);
+            var channelFactory = WcfChannelBuilder.BuildChannelFactory<IServerCommandService>(uri, userType);
+            WcfChannelBuilder.SetChannelCredentials(channelFactory, userType, username, password);
 
-            WcfHelpers.SetChannelCredentials(channelFactory, userType, username, password);
-
-            ServicePointManager.ServerCertificateValidationCallback =
-                ((sender, certificate, chain, sslPolicyErrors) => true);
+            ServicePointManager.ServerCertificateValidationCallback = WcfSettings.RemoteCertificateValidationCallback;
 
             try
             {
@@ -70,12 +68,10 @@ namespace ConfigApiSharp
                 ? new Uri($"https://{host}/ManagementServer/ConfigurationApiService.svc")
                 : new Uri($"http://{host}:{port}/ManagementServer/ConfigurationApiService.svc");
 
-            var channelFactory = WcfHelpers.BuildChannelFactory<IConfigurationService>(uri, userType);
+            var channelFactory = WcfChannelBuilder.BuildChannelFactory<IConfigurationService>(uri, userType);
+            WcfChannelBuilder.SetChannelCredentials(channelFactory, userType, username, password);
 
-            WcfHelpers.SetChannelCredentials(channelFactory, userType, username, password);
-
-            ServicePointManager.ServerCertificateValidationCallback =
-                ((sender, certificate, chain, sslPolicyErrors) => true);
+            ServicePointManager.ServerCertificateValidationCallback = WcfSettings.RemoteCertificateValidationCallback;
 
             try
             {
