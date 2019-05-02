@@ -24,9 +24,31 @@ namespace ConfigApiSharp
             var uri = userType == UserType.BasicUser
                 ? new Uri($"https://{host}/ManagementServer/ServerCommandService.svc")
                 : new Uri($"http://{host}:{port}/ManagementServer/ServerCommandService.svc");
+            var authType = userType == UserType.BasicUser ? "Basic" : "Negotiate";
+            var nc = userType == UserType.CurrentUser
+                ? CredentialCache.DefaultNetworkCredentials
+                : userType == UserType.Windows
+                    ? new NetworkCredential(username, password)
+                    : new NetworkCredential($@"[BASIC]\{username}", password);
+            var cc = new CredentialCache { { uri, authType, nc } };
+            return BuildServerCommandServiceClient(uri, userType, cc);
+        }
 
-            var channelFactory = WcfChannelBuilder.BuildChannelFactory<IServerCommandService>(uri, userType);
-            WcfChannelBuilder.SetChannelCredentials(channelFactory, userType, username, password);
+        public static BuildClientResult<IServerCommandService> BuildServerCommandServiceClient(Uri uri, UserType userType, CredentialCache cc)
+        {
+            var uriBuilder = new UriBuilder(uri) {Path = "/ManagementServer/ServerCommandService.svc"};
+            var channelFactory = WcfChannelBuilder.BuildChannelFactory<IServerCommandService>(uriBuilder.Uri, userType);
+            var authType = userType == UserType.BasicUser ? "Basic" : "Negotiate";
+            var nc = cc.GetCredential(uri, authType) ?? throw new InvalidOperationException($"No NetworkCredential found matching {uri}");
+            if (userType == UserType.BasicUser)
+            {
+                channelFactory.Credentials.UserName.UserName = nc.UserName;
+                channelFactory.Credentials.UserName.Password = nc.Password;
+            }
+            else
+            {
+                channelFactory.Credentials.Windows.ClientCredential = nc;
+            }
 
             ServicePointManager.ServerCertificateValidationCallback = WcfSettings.RemoteCertificateValidationCallback;
 
@@ -39,7 +61,6 @@ namespace ConfigApiSharp
                     Client = client,
                     Exception = null
                 };
-
                 return result;
             }
             catch (Exception ex)
@@ -67,9 +88,31 @@ namespace ConfigApiSharp
             var uri = userType == UserType.BasicUser
                 ? new Uri($"https://{host}/ManagementServer/ConfigurationApiService.svc")
                 : new Uri($"http://{host}:{port}/ManagementServer/ConfigurationApiService.svc");
+            var authType = userType == UserType.BasicUser ? "Basic" : "Negotiate";
+            var nc = userType == UserType.CurrentUser 
+                ? CredentialCache.DefaultNetworkCredentials 
+                : userType == UserType.Windows
+                    ? new NetworkCredential(username, password)
+                    : new NetworkCredential($@"[BASIC]\{username}", password);
+            var cc = new CredentialCache {{uri, authType, nc}};
+            return BuildConfigApiClient(uri, userType, cc);
+        }
 
-            var channelFactory = WcfChannelBuilder.BuildChannelFactory<IConfigurationService>(uri, userType);
-            WcfChannelBuilder.SetChannelCredentials(channelFactory, userType, username, password);
+        public static BuildClientResult<IConfigurationService> BuildConfigApiClient(Uri uri, UserType userType, CredentialCache cc)
+        {
+            var uriBuilder = new UriBuilder(uri) {Path = "/ManagementServer/ConfigurationApiService.svc"};
+            var channelFactory = WcfChannelBuilder.BuildChannelFactory<IConfigurationService>(uriBuilder.Uri, userType);
+            var authType = userType == UserType.BasicUser ? "Basic" : "Negotiate";
+            var nc = cc.GetCredential(uri, authType) ?? throw new InvalidOperationException($"No NetworkCredential found matching {uri}");
+            if (userType == UserType.BasicUser)
+            {
+                channelFactory.Credentials.UserName.UserName = nc.UserName;
+                channelFactory.Credentials.UserName.Password = nc.Password;
+            }
+            else
+            {
+                channelFactory.Credentials.Windows.ClientCredential = nc;
+            }
 
             ServicePointManager.ServerCertificateValidationCallback = WcfSettings.RemoteCertificateValidationCallback;
 
@@ -92,6 +135,9 @@ namespace ConfigApiSharp
                 };
                 return result;
             }
+
         }
+
+        
     }
 }
